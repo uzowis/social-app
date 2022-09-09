@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Register = () => {
   return (
     <div className="bg-gray-100 w-full h-screen overflow-auto xs:overflow-auto">
+        
         <div className="xs:pt-3 grid grid-cols-1 xl:px-40 px-5 lg:pt-32 lg:px-10 lg:grid-cols-2 xs:px-10 xs:grid-cols-1 " >
+           
            <div className="xs:w-[400px] xs:mx-auto lg:pt-2 lg:w-full lg:px-3 xs:py-10 py-5 my-auto justify-center">
                 <h3 className="xs:text-center xs:text-5xl lg:text-6xl text-4xl text-primary font-extrabold font-poppins lg:text-left ">friendscon</h3>
                 <p className=" xs:text-2xl text-gray-900 text-left lg:text-3xl font-300 font-roboto tracking-wide text-lg pt-3 xs:pt-5 px-7 xs:px-0 hidden xs:inline-block">Friendscon helps connect friends and families across the globe.</p>
@@ -22,7 +25,11 @@ export const Register = () => {
                         <button className="bg-primary lg:py-3 xs:py-2 py-2 rounded-lg text-2xl text-white font-semibold hover:bg-[#712fd4] transform transition-all">Sign Up</button>
                         <a href="" className="text-center text-blue-700 cursor-pointer hover:underline">Forgotten password?</a>
                         <hr />
-                        <button className="bg-green-500 lg:py-3 xs:py-2 py-2 rounded-lg text-xl text-white font-semibold hover:bg-green-600 transform transition-all w-60 self-center">Sign In</button>
+                        
+                        <Link to={'/login'} >
+                            <button className="bg-green-500 lg:py-3 xs:py-2 py-2 rounded-lg text-xl text-white font-semibold hover:bg-green-600 transform transition-all w-60 self-center">Sign In</button>
+                        </Link>
+                        
 
                     </form>
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const Login = () => {
   return (
@@ -18,7 +19,10 @@ export const Login = () => {
                         <button className="bg-primary lg:py-3 xs:py-2 py-2 rounded-lg text-2xl text-white font-semibold hover:bg-[#712fd4] transform transition-all">Sign In</button>
                         <a href="" className="text-center text-blue-700 cursor-pointer hover:underline">Forgotten password?</a>
                         <hr />
-                        <button className="bg-green-500 lg:py-3 xs:py-2 py-2 rounded-lg text-xl text-white font-semibold hover:bg-green-600 transform transition-all w-60 self-center">Create New Account</button>
+                        <Link to={'/register'} >
+                            <button className="bg-green-500 lg:py-3 xs:py-2 py-2 rounded-lg text-xl text-white font-semibold hover:bg-green-600 transform transition-all w-60 self-center">Create New Account</button>
+                        </Link>
+                        
 
                     </form>
 
